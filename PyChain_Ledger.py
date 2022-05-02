@@ -14,7 +14,7 @@ class Record:
     receiver: str
     amount: float
 
-# Create Block Data Class to store the record data by adding a data attribute called "Record" 
+# Create Block Data Class to store the record data by adding a data attribute called "record" 
 @dataclass 
 class Block:
     record: Record # Add class "Record" defined above
