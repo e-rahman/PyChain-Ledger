@@ -7,6 +7,7 @@ import datetime as datetime
 import pandas as pd
 import hashlib
 
+########################################################################################################################
 # Create a Record Data Class
 @dataclass # dataclass decorator defines our data class
 class Record:
@@ -14,7 +15,8 @@ class Record:
     receiver: str
     amount: float
 
-# Create Block Data Class to store the record data by adding a data attribute called "record" 
+########################################################################################################################
+# Modify the Exisiting Block Data Class to Store Record Data
 @dataclass 
 class Block:
     record: Record # Add class "Record" defined above
@@ -89,7 +91,6 @@ st.markdown("## Store a Transaction Record in the PyChain")
 pychain = setup()
 
 ########################################################################################################################
-
 # Add Relevant User Inputs to the Streamlit Interface
 
 # Create input for getting the sender from the user
@@ -120,7 +121,6 @@ pychain.add_block(new_block)
 st.balloons()
 
 ########################################################################################################################
-
 # Streamlit Code (continues)
 
 st.markdown("## The PyChain Ledger")
