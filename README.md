@@ -1,4 +1,4 @@
-# PyChain-Ledger
+# PyChain Ledger
 
 ## Streamlit
 
